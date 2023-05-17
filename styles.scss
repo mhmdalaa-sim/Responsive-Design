@@ -1,0 +1,27 @@
+$primary:rgb(3, 32, 221);
+$success:#467612;
+
+@import"./npm/node_modules/bootstrap/scss/bootstrap.scss";
+
+@each $key,$val in $colors{
+
+    .btn-#{$key}{
+       background-color: $val !important; 
+    }
+
+    .bg-#{$key}{
+        background-color: $val !important; 
+     }
+
+    .text-#{$key}{
+        color: $val !important; 
+     }
+}
+
+
+@each $key,$val in $teals{
+
+    .btn-#{$key}{
+       background-color: $val !important; 
+    }
+}
